@@ -1,5 +1,4 @@
-Gastos API
-Uma API para gerenciar gastos pessoais, criada com Node.js, Express e MySQL. Este projeto utiliza o Laragon como ambiente de desenvolvimento para facilitar a configuração local.
+Api para gerenciar gastos
 
 Pré-requisitos
 Antes de começar, certifique-se de ter o seguinte instalado:

@@ -1,8 +1,10 @@
 require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const sequelize = require('./config/database');
 const Gasto = require('./models/gasto');
+
 
 const app = express();
 const port = 3000;
@@ -47,6 +49,7 @@ app.post('/gastos', async (req, res) => {
     res.status(500).json({ error: 'Erro ao adicionar dados' });
   }
 });
+
 
 
 app.put('/gastos/:id', async (req, res) => {

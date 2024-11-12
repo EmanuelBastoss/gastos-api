@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste da API</title>
     <script>
-        
+
         const apiUrl = 'http://localhost:3000/gastos'; 
 
         async function listarGastos() {
@@ -45,6 +46,11 @@
         alert("Por favor, preencha todos os campos!");
         return;
     }
+
+    // if (!id || !nome || !valor){
+    //     alert("Por favor, preencha todos os campos!");
+    //     return;
+    // }
 
     const response = await fetch(`${apiUrl}/${id}`, {
         method: 'PUT',
